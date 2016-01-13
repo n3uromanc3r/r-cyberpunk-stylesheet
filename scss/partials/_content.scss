@@ -1,0 +1,292 @@
+.link {
+	margin: 0;
+	margin-bottom: 8px;
+	padding-left: 3px;
+	background: $bg-color;
+	border: 1px solid $cyan;
+	padding: 15px;
+	margin-left: 20px;
+	margin-right: 315px;
+	z-index: 101;
+	position: relative;
+	border-right: solid 1px $bg-color;
+	border-radius: 5px 0 0 5px;
+
+	.rank {
+		// float: left;
+		// margin-top: 15px;
+		// color: $green;
+		// font-family: sans-serif;
+		// font-size: small;
+		// text-align: right;
+		// font-weight: bold;
+
+		display: none;
+	}
+
+	.midcol {
+		margin-left: 0;
+	}
+
+	.unvotable-message {
+		border: solid 1px $orange;
+		color: $orange;
+	}
+
+	.score.likes {
+		color: $cyan;
+	}
+}
+
+.thing {
+	.title {
+		color: #F500FF;
+		outline: none;
+		margin-right: .4em;
+		padding: 0px;
+		overflow: hidden;
+		font-weight: bold !important;
+		font-size: small !important;
+	}
+
+	.usertext {
+		.usertext-body {
+			background-color: $bg-color;
+			border: solid 1px $cyan;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 5px 0 0 5px;
+			z-index: 100;
+			position: relative;
+			margin-right: 315px;
+			border-right: solid 1px $bg-color;
+
+			.md {
+				color: $green;
+
+				i, em {
+					color: $pink;
+				}
+
+				strong {
+					font-weight: bold;
+					color: $cyan-green;
+				}
+
+				pre {
+					background: $bg-color;
+					border: none;
+				}
+
+				code {
+					background: $dark-green;
+					border: $green;
+					padding: 10px !important;
+					display: inline-block;
+					border-radius: 5px;
+				}
+
+				blockquote {
+					color: $orange;
+					border-left: 2px solid $orange;
+
+					p {
+						border: solid 1px $orange;
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.child .thing {
+		.usertext-body {
+			border: solid 1px $pink;
+			border-right: solid 1px $bg-color;
+		}
+		.child .thing {
+			.usertext-body {
+				border: solid 1px $cyan;
+				border-right: solid 1px $bg-color;
+			}
+		}
+	}
+}
+
+.thumbnail {
+	display: none;
+}
+
+.entry {
+	.flat-list.buttons {
+		li {
+
+			a {
+				color: #333;
+
+				&:hover {
+					color: $red;
+					text-decoration: none;
+				}
+			}
+
+			&:first-of-type a, .approve-button a {
+				&:hover {
+					color: $green;
+				}
+			}
+
+			&:nth-of-type(2) a {
+				&:hover {
+					color: $cyan;
+				}
+			}
+
+			&:nth-of-type(3) a {
+				&:hover {
+					color: $orange;
+				}
+			}
+
+			&:nth-of-type(4) a {
+				&:hover {
+					color: $yellow;
+				}
+			}
+
+			&:nth-of-type(5) a {
+				&:hover {
+					color: $red;
+				}
+			}
+
+			&:last-of-type a {
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	.commentarea {
+		padding-left: 25px;
+
+		.panestack-title {
+			border-bottom: none;
+
+			.title {
+				color: $green;
+				background: $dark-green;
+				padding: 2px 6px;
+				top: -10px;
+				position: relative;
+				border: solid 1px $cyan;
+				font-size: small;
+				border-radius: 0 0 3px 3px;
+			}
+		}
+
+		.usertext {
+
+			.usertext-edit {
+				textarea {
+					background: $bg-color;
+					border: solid 1px $orange;
+					color: $orange;
+					font-family: monospace;
+					font-size: medium;
+					padding: 5px;
+					outline: none;
+				}
+
+				button {
+					margin: 5px 5px 10px 0;
+					background: $bg-color;
+					color: $pink;
+					border: solid 1px $cyan;
+					padding: 10px;
+					border-radius: 0 10px 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.new-comment .md :not(pre)>code, .link .md :not(pre)>code, .usertext.border .md :not(pre)>code, .new-comment .md pre, .link .md pre, .usertext.border .md pre {
+	background-color: #000000;
+	border: none;
+	padding: 11px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.comment .child, .comment .showreplies {
+	border-left: none;
+}
+
+.arrow {
+	transition: all 450ms ease;
+}
+
+.arrow.up {
+	background-image: none;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 14px solid $dark-green;
+}
+
+.arrow.upmod {
+	background-image: none;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 14px solid $green;
+}
+
+.arrow.down {
+	background-image: none;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 14px solid $dark-green;
+}
+
+.arrow.downmod {
+	background-image: none;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 14px solid $orange;
+}
+
+.flair, .linkflairlabel {
+	background: transparent;
+	color: $green;
+	border: none;
+	font-weight: bold;
+}
+
+a.author {
+	color: $orange;
+}
+
+.gold-accent {
+	border: solid 1px $pink;
+	background: $bg-color;
+
+	&.comment-visits-box {
+		color: $orange;
+		margin: 0px 5px 25px 100px;
+
+		.title {
+			font-size: 10px;
+		}
+	}
+}

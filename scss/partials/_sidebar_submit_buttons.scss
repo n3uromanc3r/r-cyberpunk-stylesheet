@@ -1,0 +1,47 @@
+.morelink, .disabled .morelink, .login-form-side .submit .btn, .user-form .submit .btn {
+	display: block;
+	text-align: center;
+	position: relative;
+	border: 1px solid $cyan;
+	background: #000000 none repeat-x scroll center left;
+	background-image: none;
+	background-position: 0px -278px;
+	background-repeat: repeat;
+	font-size: 115%;
+	font-weight: 700;
+	letter-spacing: 2px;
+	line-height: 31px;
+	height: 31px;
+	text-transform: uppercase;
+	transition: all 200ms ease;
+}
+.morelink .nub, .disabled .morelink .nub {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	height: 31px;
+	width: 24px;
+	background: transparent;
+	background-image: none;
+}
+.morelink a {
+	color: $pink;
+	transition: all 100ms ease;
+}
+.disabled .morelink a {
+	color: $red;
+	transition: all 100ms ease;
+}
+.morelink:hover, .disabled .morelink:hover, .mlh {
+	border-color: $green;
+	background-image: none;
+}
+.morelink:hover .nub, .disabled .morelink:hover .nub, .mlhn {
+	background-image: none;
+}
+.morelink:hover a, .disabled .morelink:hover a {
+	color: $green;
+}
+.login-form-side #remember-me, .login-form-side .submit {
+	margin: 10px 0px;
+}

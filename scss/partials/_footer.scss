@@ -1,0 +1,37 @@
+.footer-parent {
+	font-size: larger;
+	padding-top: 40px;
+	clear: both;
+	text-align: right;
+	z-index: 103;
+	position: relative;
+	width: 600px;
+	float: right;
+	margin-right: 320px;
+}
+
+.footer {
+	color: gray;
+	padding: 5px;
+	margin: 15px auto;
+	border: 1px solid $pink;
+	display: flex;
+	max-width: 600px;
+	background: $bg-color;;
+	border-radius: 5px 0 0 5px;
+	border-right: solid 1px $bg-color;;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.bottommenu {
+	color: $orange;
+	font-size: 9px;
+	clear: both;
+	text-align: center;
+	width: 600px;
+	float: right;
+	margin-right: 0;
+	position: relative;
+	top: -55px;
+}

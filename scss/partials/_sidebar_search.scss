@@ -1,0 +1,66 @@
+/* Ensure placeholders use the same colour as the search input text field */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $green;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    $green;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    $green;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    $green;
+}
+
+/* Style the input */
+#search input[type="text"] {
+	border: solid 1px $green;
+	background-color: $dark-green;
+	color: $green!important;
+	font-family: monospace;
+	font-size: 10px;
+	padding: 10px;
+	padding-left: 50px;
+	font-weight: 800;
+}
+
+/* Set parent to position relative, so that we can absolute position the before pseudo element */
+.side .spacer {
+	position: relative;
+}
+
+/* Set the before pseudo element.  This "find:$" item used to be an image, but this is better */
+#search:before {
+	content: "find:$";
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: $green;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-weight: 800;
+}
+
+/* Get rid of that nasty grey magnifying glass */
+#search input[type=submit], #search input[type=submit]:hover {
+	background-image: url(%%search%%);
+	background-position: 0 0;
+}
+
+/* Style dropdown infobar */
+.infobar {
+	background-color: $bg-color;
+	border: 1px solid $green;
+	color: $green;
+}
+
+#searchexpando, #moresearchinfo {
+	background-color: #002F00;
+
+	a {
+		color: $yellow;
+	}
+}

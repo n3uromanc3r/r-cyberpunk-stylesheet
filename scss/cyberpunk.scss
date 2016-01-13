@@ -1,0 +1,30 @@
+$bg-color: #000000;
+
+$green: #00FE00;
+$dark-green: #002F00;
+$pink: #F500FF;
+$hotter-pink: #FF016D;
+$cyan: #00A3FF;
+$orange: #FF7A00;
+$cyan-green: #00FFE0; // #00FF7A
+$yellow: #F2F900;
+$red: #F00F00;
+$grey: #666666;
+
+$sr-header-background: #0E0E0E;
+$sr-header-text: #666666;
+
+@import "partials/toc";
+@import "partials/sr_header_area";
+@import "partials/header_bottom_left";
+@import "partials/header_bottom_right";
+@import "partials/body";
+@import "partials/content";
+@import "partials/sidebar";
+@import "partials/sidebar_search";
+@import "partials/sidebar_submit_buttons";
+@import "partials/spritesheet";
+@import "partials/submit_page";
+@import "partials/mod_section";
+@import "partials/footer";
+@import "partials/outro";

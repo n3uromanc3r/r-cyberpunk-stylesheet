@@ -1,0 +1,119 @@
+ul#image-preview-list {
+	li {
+		color: $green;
+	}	
+}
+
+
+.stylesheet-customize-container {
+
+	color: $green;
+	margin: 20px;
+
+	.sheets {
+		.col {
+			textarea {
+				background: $bg-color;
+				color: $green;
+				border: solid 1px $green;				
+				box-sizing: border-box;
+			}
+		}
+	}
+}
+
+.moderator {
+	.linefield {
+		width: 500px;
+		background-color: $bg-color;
+		border-radius: 0;
+		padding: 5px 10px 10px 10px;
+		font-size: large;
+		border: solid 1px $pink;
+		color: $orange;
+
+		textarea, input[type=text], input[type=url], input[type=password], input[type=number] {
+			background: $bg-color;
+			border: solid 1px $orange;
+			color: $orange;
+		}
+
+		span.title {
+			text-transform: uppercase;
+			font-size: large;
+			color: $orange;
+		}
+
+		.linefield-content {
+			padding: 0;
+		}
+	}
+}
+
+.create-reddit {
+	.pretty-form {
+		width: 520px;
+		padding: 15px;
+		border: solid 1px $cyan;
+		margin: 20px 5px;
+
+		input[type=text], textarea, input[type=password], input[type=number] {
+			box-shadow: none;
+		}
+
+		button[name=edit] {
+			background: $bg-color;
+			color: $pink;
+			border: solid 1px $cyan;
+			padding: 10px;
+			border-radius: 0 10px 0 10px;
+			margin: 0;
+			position: absolute;
+			margin-top: 30px;
+			left: 10px;
+		}
+
+		.linefield:first-of-type {
+			color: $green;
+			border-color: $green;
+			.title {
+				color: $green;
+			}
+
+			textarea, input[type=text], input[type=url], input[type=password], input[type=number] {
+				color: $green;
+				border-color: $green;
+			}
+		}
+	}
+}
+
+#subreddit_stylesheet{
+	h2 {
+		display: none;
+	}
+}
+
+.pretty-form {
+	input[name=reason] {
+		background: $bg-color;
+		border: solid 1px $green;
+		color: $green;
+	}
+}
+
+.stylesheet-customize-container {
+	button {
+		background: $bg-color;
+		color: $pink;
+		border: solid 1px $cyan;
+		padding: 10px;
+		border-radius: 0 10px 0 10px;
+	}
+
+	input[type=text] {
+		background: $bg-color;
+		border: solid 1px $green;
+		color: $green;
+	}
+}

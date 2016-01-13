@@ -1,0 +1,82 @@
+#sr-header-area {
+    text-transform: uppercase !important;
+    color: $sr-header-text !important;
+    border-color: $orange;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: none;
+    font-size: 9px;
+    background-color: $sr-header-background !important;
+}
+
+#sr-header-area a:active, #sr-header-area a:hover, #sr-header-area a:link, #sr-header-area a:visited {
+    text-decoration: none;
+    color: $sr-header-text !important;
+}
+
+#sr-more-link {
+    background: 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px 0 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#header #sr-header-area a, #srList td a {
+    font-weight: 700 !important;
+    background: $sr-header-background;
+    transition: color 200ms ease;
+}
+
+#header #sr-header-area a {
+    font-size: 100% !important;
+}
+
+#header #sr-header-area a:hover {
+    color: $orange !important;
+}
+
+// #header #sr-header-area .flat-list:first-of-type a:hover {
+//     color: $cyan;
+// }
+
+
+.dropdown.srdrop .selected {
+	background-image: none;
+	color: $orange;
+    font-weight: bold;
+}
+
+#header #sr-header-area .drop-choices a.choice:hover::before {
+	content: ".:";
+	position: absolute;
+	left: 6px;
+}
+
+#header #sr-header-area .drop-choices a.choice:hover::after {
+	content: ":.";
+	position: absolute;
+	margin-left: 2px;
+}
+
+#header #sr-header-area .drop-choices {
+	border: solid 1px $orange;
+	border-top: transparent;
+    transition: all 600ms ease;
+    display: block;
+    left: -260px !important;
+}
+
+#header #sr-header-area .drop-choices.inuse {
+    left: 0px !important;
+}
+
+#header #sr-header-area .drop-choices a.choice {
+	padding: 2px 15px 1px 15px;
+}
+
+#header #sr-header-area .drop-choices a.choice:hover {
+	background: darken($orange, 25%);	
+}

@@ -1,0 +1,1013 @@
+/*!============================================================================//
+||                        __                                  __               ||
+||           .----.--.--.|  |--.-----.----.-----.--.--.-----.|  |--.           ||
+||           |  __|  |  ||  _  |  -__|   _|  _  |  |  |     ||    <            ||
+||           |____|___  ||_____|_____|__| |   __|_____|__|__||__|__|           ||
+||                |_____|                 |__|                                 ||
+||                                                                             ||
+//=============================================================================*/
+/*!============================================================================//
+||                                                                             ||
+||                              . . .                                          ||
+||            .........       DDNNN8N=                 ........                ||
+||            .. .....       IMM= . ..                 7MMMMMM.     ,I..       ||
+||          I ....7=...    . $NN.  .: .        .  OMMNMMMMMMMM . 7NM7          ||
+||    ...,~?+.I..7?.. .     .N~....?MND.. . .?MMNMMMMMMMMMNMM.O7 ...           ||
+||    ..=$8$IN:..=~=7..      .Z$..NMMM8=?8MMMMMMMMMMMNM7...                    ||
+||    ...?$8,+~~=ALL:+.        +.8MMMNMMMMMMMMMMMMMMMM.....                    ||
+||        .7+I+,YOUR:=,      . ?=NMMMMMMMMMMMMMMMMMMD .                        ||
+||        ..=?BASE-ARE..      .M7~MMMMMMMMMMMMMMMMM=.                          ||
+||         $= BELONG=,.     . I.MNMMMMMMMMMMMMMMMM                             ||
+||         .D..=TO=-:..    .N..:D7MMMMMMMMMMMMMMN,                             ||
+||          D .$US+,...   :. ::OMMMMMMMMMMMMMMMMM~                             ||
+||        . Z ..N8.    .. ~   MND,?MMMMMMMMMMMMMM8.                            ||
+||         .D,..O..    . +M,. ...:  MNMMMMMMMMMMMM                             ||
+||        .~M~ O..     OMN ,M. . + ,,MMMMMMMMMMMMM.                            ||
+||          M,.D....   N,.~MMN..Z,I+NMMMMMMMMMMMMM,..                          ||
+||        . = INOII?D.Z..$NMMMMNMMMMMMMMMMMMMMMMMMM .                          ||
+||            NMNMM8I.M$.MMMO.MMMMMMMMMMMMMMMMMMMMM~                           ||
+||        .,D7=MMMMMMN8DMMM.. 8MMMMMMMMMMMMMMMMMMMMMI..                        ||
+||        ~?....=MNMMMMNM$.   .IMMMMMMMMMMMMMMMMMMMMM8                         ||
+||    ...ZI..      .,  ..      ..MMMMMMMMMMMMMMMMMMMMMI                        ||
+||    .,.,,,.      ..  ..      ..MMMMMMMMMMMMMMMMMMMM.                         ||
+||    ...7.                    ..MMMMMMMMMMMMMMMMMMMMM                         ||
+||                              .ZMMMM7ZMI,.IMMMMMMMMMM..                      ||
+||                             .  MM$.        . OMMNMMM7                       ||
+||                               D,...    .     ...,MMMM.                      ||
+||                              M~      DI: .MM8D,...  .                       ||
+||                           . ,,.    .O$7$MM7$M~..,,    7                     ||
+||          ..               .:.          MO   .M.,      .7..                  ||
+||          ..                ,. .    :MMM.    . ,         .                   ||
+||                         ..+       ~MM..        . .      I.                  ||
+||                         .=     .IMM7.           ...      ~                  ||
+||                        .:      MMM...           ..:     .                   ||
+||                       ..  .. MMMM..       .        78.  ..I                 ||
+||                       + ..+MMMM,.                   :.. . MI                ||
+||                      += .MMMMMI..                    ,7MMMMM                ||
+||                      . .MMMMD.. .                    ?  .~MM                ||
+||                   ..  7M.MM~ .                      . ....MM                ||
+||                   . .:= NM.                              .MMZ               ||
+||                 . Z..:?MZ                             .,  MMM               ||
+||                  O  :MMZ .                             M  ZMM..             ||
+||                  M7MNMM.                                . ,M: .             ||
+||                .?MMM                                    ~MMMM,.            .||
+||  ..         .  +IMM~                                     MNMN$...    ..     ||
+||  ..        ... ..MN.                                    ,M,+.O= .    ..     ||
+||          .....=MMMM...                                  MM..  .,            ||
+||          ..MMMMMMMMMMMMMMMMM8NZO7~,+$ODNDNMMMMNNNZ?=    8M.ONMMM?  ~.?+. .. ||
+||                     ....    ....  .:7?+~:,                                  ||
+||                                                                             ||
+//=============================================================================*/
+/*!============================================================================//
+||                                                                             ||
+||                     The human eye is a wonderful device                     ||
+||  With a little effort, it can fail to see even the most glaring injustice.  ||
+||                                                                             ||
+//=============================================================================*/
+/*!============================================================================//
+||                                 __                __                        ||
+||              .----.-----.-----.|  |_.-----.-----.|  |_.-----.               ||
+||              |  __|  _  |     ||   _|  -__|     ||   _|__ --|               ||
+||              |____|_____|__|__||____|_____|__|__||____|_____|               ||
+||                                                                             ||
+||-----------------------------------------------------------------------------||
+||-----------------------------------------------------------------------------||
+||                                                                             ||
+||  00110001 :: HEADER BOTTOM LEFT                                             ||
+||  00110010 :: BODY                                                           ||
+||  00110011 :: SIDEBAR                                                        ||
+||  00110100 ::                                                                ||
+||  00110101 ::                                                                ||
+||  00110110 ::                                                                ||
+||  00110111 ::                                                                ||
+||  00110111 :: TITLE SPRITESHEET HIGHLIGHTING                                 ||
+||  00111001 :: RES FIXES                                                      ||
+||                                                                             ||
+//=============================================================================*/
+#sr-header-area {
+  text-transform: uppercase !important;
+  color: #666666 !important;
+  border-color: #FF7A00;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: none;
+  font-size: 9px;
+  background-color: #0E0E0E !important; }
+
+#sr-header-area a:active, #sr-header-area a:hover, #sr-header-area a:link, #sr-header-area a:visited {
+  text-decoration: none;
+  color: #666666 !important; }
+
+#sr-more-link {
+  background: 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 5px 0 15px;
+  font-weight: 700;
+  margin: 0; }
+
+#header #sr-header-area a, #srList td a {
+  font-weight: 700 !important;
+  background: #0E0E0E;
+  transition: color 200ms ease; }
+
+#header #sr-header-area a {
+  font-size: 100% !important; }
+
+#header #sr-header-area a:hover {
+  color: #FF7A00 !important; }
+
+.dropdown.srdrop .selected {
+  background-image: none;
+  color: #FF7A00;
+  font-weight: bold; }
+
+#header #sr-header-area .drop-choices a.choice:hover::before {
+  content: ".:";
+  position: absolute;
+  left: 6px; }
+
+#header #sr-header-area .drop-choices a.choice:hover::after {
+  content: ":.";
+  position: absolute;
+  margin-left: 2px; }
+
+#header #sr-header-area .drop-choices {
+  border: solid 1px #FF7A00;
+  border-top: transparent;
+  transition: all 600ms ease;
+  display: block;
+  left: -260px !important; }
+
+#header #sr-header-area .drop-choices.inuse {
+  left: 0px !important; }
+
+#header #sr-header-area .drop-choices a.choice {
+  padding: 2px 15px 1px 15px; }
+
+#header #sr-header-area .drop-choices a.choice:hover {
+  background: #803d00; }
+
+/*!============================================================================//
+||                       00110001 :: HEADER BOTTOM LEFT                        ||
+||=============================================================================||
+||                                                                             ||
+||               Never underestimate the determination of a kid                ||
+||                        who is time-rich and cash-poor                       ||
+||                                                                             ||
+//=============================================================================*/
+/* change header logo image */
+#header-bottom-left {
+  height: 80px;
+  background-image: url(%%header%%); }
+
+/* change header border bottom */
+#header {
+  border-bottom: 1px solid #00A3FF;
+  z-index: 103; }
+
+/* make logo text (pagename) clickable */
+.pagename {
+  font-size: 0px !important; }
+  .pagename a {
+    text-indent: -9999px;
+    font-size: 0px !important;
+    color: black;
+    padding-left: 162px !important;
+    padding-top: 75px !important;
+    margin-left: 30px !important;
+    position: absolute;
+    left: 60px;
+    top: 20px; }
+
+.tabmenu {
+  bottom: 5px;
+  position: relative; }
+  @media (max-width: 1165px) {
+    .tabmenu {
+      left: -88px;
+      font-size: smaller; } }
+  .tabmenu li {
+    margin: 0px 6px;
+    position: relative; }
+    .tabmenu li a, .tabmenu li.selected a {
+      padding: 4px 15px 0 0px;
+      background-color: #000000;
+      border: solid 1px #FF016D;
+      border-left: none;
+      border-bottom: none;
+      color: #FF7A00;
+      position: relative;
+      height: 15px;
+      display: inline-block; }
+      .tabmenu li a::before, .tabmenu li.selected a::before {
+        content: "";
+        background: url(%%tab-left%%);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -20px;
+        top: -1px; }
+    .tabmenu li.selected a, .tabmenu li:hover a {
+      color: #00A3FF;
+      border: solid 1px #00A3FF;
+      border-bottom: solid 1px #000000; }
+      .tabmenu li.selected a::before, .tabmenu li:hover a::before {
+        background: url(%%tab-left-selected%%);
+        border-bottom: solid 1px #000000; }
+    .tabmenu li a:hover {
+      color: #000000;
+      background: #FF7A00;
+      border-bottom: solid 1px #FF7A00; }
+      .tabmenu li a:hover::before {
+        background: url(%%tab-left-hover%%); }
+    .tabmenu li:first-child {
+      z-index: 9; }
+    .tabmenu li:nth-child(2) {
+      z-index: 8; }
+    .tabmenu li:nth-child(3) {
+      z-index: 7; }
+    .tabmenu li:nth-child(4) {
+      z-index: 6; }
+    .tabmenu li:nth-child(5) {
+      z-index: 5; }
+    .tabmenu li:nth-child(6) {
+      z-index: 4; }
+    .tabmenu li:nth-child(7) {
+      z-index: 3; }
+    .tabmenu li:nth-child(8) {
+      z-index: 2; }
+    .tabmenu li:nth-child(9) {
+      z-index: 1; }
+    .tabmenu li.selected {
+      z-index: 10; }
+    .tabmenu li:hover {
+      z-index: 9; }
+      .tabmenu li:hover:not(.selected) {
+        margin: 0 5px 0 6px; }
+      .tabmenu li:hover a:hover::before {
+        border-bottom: solid 1px #FF7A00; }
+
+#header-bottom-right {
+  background-color: #000000;
+  padding: 10px; }
+  #header-bottom-right::after {
+    content: "";
+    display: block;
+    background: black;
+    height: 1px;
+    width: 320px;
+    position: absolute;
+    right: 0;
+    bottom: -1px; }
+
+.user a {
+  color: #F2F900; }
+
+.pref-lang {
+  color: #FF7A00; }
+
+body {
+  background-image: url(%%bg%%); }
+
+.side {
+  background: #000000;
+  padding: 5px 10px 5px 10px;
+  border-left: 1px solid #00A3FF;
+  border-bottom: 1px solid #00A3FF;
+  position: absolute;
+  margin-top: -1px;
+  z-index: 100;
+  right: -5px; }
+
+.hover-bubble.multi-selector {
+  z-index: 103; }
+
+.menuarea {
+  border-bottom: none; }
+
+a {
+  color: #00A3FF;
+  outline: none !important; }
+
+button {
+  outline: none !important; }
+
+input {
+  box-shadow: none !important; }
+
+.link {
+  margin: 0;
+  margin-bottom: 8px;
+  padding-left: 3px;
+  background: #000000;
+  border: 1px solid #00A3FF;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 315px;
+  z-index: 101;
+  position: relative;
+  border-right: solid 1px #000000;
+  border-radius: 5px 0 0 5px; }
+  .link .rank {
+    display: none; }
+  .link .midcol {
+    margin-left: 0; }
+  .link .unvotable-message {
+    border: solid 1px #FF7A00;
+    color: #FF7A00; }
+  .link .score.likes {
+    color: #00A3FF; }
+
+.thing .title {
+  color: #F500FF;
+  outline: none;
+  margin-right: .4em;
+  padding: 0px;
+  overflow: hidden;
+  font-weight: bold !important;
+  font-size: small !important; }
+.thing .usertext .usertext-body {
+  background-color: #000000;
+  border: solid 1px #00A3FF;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  z-index: 100;
+  position: relative;
+  margin-right: 315px;
+  border-right: solid 1px #000000; }
+  .thing .usertext .usertext-body .md {
+    color: #00FE00; }
+    .thing .usertext .usertext-body .md i, .thing .usertext .usertext-body .md em {
+      color: #F500FF; }
+    .thing .usertext .usertext-body .md strong {
+      font-weight: bold;
+      color: #00FFE0; }
+    .thing .usertext .usertext-body .md pre {
+      background: #000000;
+      border: none; }
+    .thing .usertext .usertext-body .md code {
+      background: #002F00;
+      border: #00FE00;
+      padding: 10px !important;
+      display: inline-block;
+      border-radius: 5px; }
+    .thing .usertext .usertext-body .md blockquote {
+      color: #FF7A00;
+      border-left: 2px solid #FF7A00; }
+      .thing .usertext .usertext-body .md blockquote p {
+        border: solid 1px #FF7A00;
+        padding: 10px; }
+.thing .child .thing .usertext-body {
+  border: solid 1px #F500FF;
+  border-right: solid 1px #000000; }
+.thing .child .thing .child .thing .usertext-body {
+  border: solid 1px #00A3FF;
+  border-right: solid 1px #000000; }
+
+.thumbnail {
+  display: none; }
+
+.entry .flat-list.buttons li a {
+  color: #333; }
+  .entry .flat-list.buttons li a:hover {
+    color: #F00F00;
+    text-decoration: none; }
+.entry .flat-list.buttons li:first-of-type a:hover, .entry .flat-list.buttons li .approve-button a:hover {
+  color: #00FE00; }
+.entry .flat-list.buttons li:nth-of-type(2) a:hover {
+  color: #00A3FF; }
+.entry .flat-list.buttons li:nth-of-type(3) a:hover {
+  color: #FF7A00; }
+.entry .flat-list.buttons li:nth-of-type(4) a:hover {
+  color: #F2F900; }
+.entry .flat-list.buttons li:nth-of-type(5) a:hover {
+  color: #F00F00; }
+.entry .flat-list.buttons li:last-of-type a:hover {
+  color: #F500FF; }
+
+.content .commentarea {
+  padding-left: 25px; }
+  .content .commentarea .panestack-title {
+    border-bottom: none; }
+    .content .commentarea .panestack-title .title {
+      color: #00FE00;
+      background: #002F00;
+      padding: 2px 6px;
+      top: -10px;
+      position: relative;
+      border: solid 1px #00A3FF;
+      font-size: small;
+      border-radius: 0 0 3px 3px; }
+  .content .commentarea .usertext .usertext-edit textarea {
+    background: #000000;
+    border: solid 1px #FF7A00;
+    color: #FF7A00;
+    font-family: monospace;
+    font-size: medium;
+    padding: 5px;
+    outline: none; }
+  .content .commentarea .usertext .usertext-edit button {
+    margin: 5px 5px 10px 0;
+    background: #000000;
+    color: #F500FF;
+    border: solid 1px #00A3FF;
+    padding: 10px;
+    border-radius: 0 10px 0 10px; }
+
+.new-comment .md :not(pre) > code, .link .md :not(pre) > code, .usertext.border .md :not(pre) > code, .new-comment .md pre, .link .md pre, .usertext.border .md pre {
+  background-color: #000000;
+  border: none;
+  padding: 11px;
+  border-radius: 5px;
+  display: inline-block; }
+
+.comment .child, .comment .showreplies {
+  border-left: none; }
+
+.arrow {
+  transition: all 450ms ease; }
+
+.arrow.up {
+  background-image: none;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 14px solid #002F00; }
+
+.arrow.upmod {
+  background-image: none;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 14px solid #00FE00; }
+
+.arrow.down {
+  background-image: none;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 14px solid #002F00; }
+
+.arrow.downmod {
+  background-image: none;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 14px solid #FF7A00; }
+
+.flair, .linkflairlabel {
+  background: transparent;
+  color: #00FE00;
+  border: none;
+  font-weight: bold; }
+
+a.author {
+  color: #FF7A00; }
+
+.gold-accent {
+  border: solid 1px #F500FF;
+  background: #000000; }
+  .gold-accent.comment-visits-box {
+    color: #FF7A00;
+    margin: 0px 5px 25px 100px; }
+    .gold-accent.comment-visits-box .title {
+      font-size: 10px; }
+
+.leavemoderator {
+  background: #000000; }
+
+.titlebox {
+  color: #00FE00;
+  text-align: right; }
+  .titlebox h1 {
+    text-align: center;
+    padding: 0 0 30px;
+    display: none; }
+    .titlebox h1 a {
+      color: #FF7A00; }
+  .titlebox form.toggle {
+    background: #000000; }
+  .titlebox .fancy-toggle-button {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+    padding: 0 0 30px; }
+    .titlebox .fancy-toggle-button .remove {
+      background-image: none;
+      background: #000000;
+      border: solid 1px #FF7A00;
+      color: #FF7A00; }
+    .titlebox .fancy-toggle-button .add {
+      background-image: none;
+      background: #000000;
+      border: solid 1px #00FE00;
+      color: #00FE00; }
+  .titlebox .subscribers {
+    background: #002F00;
+    width: 290px;
+    display: block;
+    padding: 5px;
+    border: solid 1px #00FE00;
+    text-align: right;
+    border-bottom: none;
+    font-family: monospace; }
+    .titlebox .subscribers span.word {
+      font-size: 0; }
+      .titlebox .subscribers span.word::after {
+        content: "subscribed users";
+        display: inline-block;
+        font-size: small;
+        width: auto; }
+  .titlebox .users-online {
+    background: #002F00;
+    width: 290px;
+    display: block;
+    padding: 5px;
+    border: solid 1px #00FE00;
+    text-align: right;
+    border-top: none;
+    font-family: monospace; }
+    .titlebox .users-online::before {
+      background-image: url(%%spinner%%);
+      background-position: 0 0;
+      width: 16px;
+      height: 16px;
+      margin-right: 5px; }
+    .titlebox .users-online span.word {
+      font-size: 0; }
+      .titlebox .users-online span.word::after {
+        content: "authenticated users connected";
+        font-size: small;
+        width: auto; }
+  .titlebox .leavemoderator {
+    padding-top: 40px; }
+    .titlebox .leavemoderator::before {
+      background-image: url(%%moderator%%);
+      background-position: 0 0; }
+  .titlebox .moderator.toggle .main::before {
+    background-image: url(%%moderator%%);
+    background-position: 0 0; }
+  .titlebox form.leavecontributor-button::before {
+    background-image: url(%%approved%%);
+    background-position: 0 0; }
+  .titlebox .tagline {
+    margin: 5px 0 50px 20px; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.icon-menu a {
+  background: #000000; }
+
+.sidecontentbox .content {
+  border: none; }
+  .sidecontentbox .content ul.flat-vert {
+    text-align: right; }
+    .sidecontentbox .content ul.flat-vert a {
+      color: #FF7A00; }
+  .sidecontentbox .content .icon-menu .choice::before {
+    background-image: none; }
+  .sidecontentbox .content .icon-menu .choice::after {
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    content: " ";
+    margin-left: 8px;
+    vertical-align: middle; }
+  .sidecontentbox .content .icon-menu .reddit-edit::after {
+    background-image: url(%%subreddit-settings%%); }
+  .sidecontentbox .content .icon-menu .edit-stylesheet::after {
+    background-image: url(%%edit-stylesheet%%); }
+  .sidecontentbox .content .icon-menu .moderator-mail::after {
+    background-image: url(%%moderator-mail%%); }
+  .sidecontentbox .content .icon-menu .reddit-moderators::after {
+    background-image: url(%%moderators%%); }
+  .sidecontentbox .content .icon-menu .reddit-contributors::after {
+    background-image: url(%%edit-approved-submitters%%); }
+  .sidecontentbox .content .icon-menu .reddit-traffic::after {
+    background-image: url(%%traffic-stats%%); }
+  .sidecontentbox .content .icon-menu .reddit-modqueue::after {
+    background-image: url(%%moderation-queue%%); }
+  .sidecontentbox .content .icon-menu .reddit-reported::after {
+    background-image: url(%%reports%%); }
+  .sidecontentbox .content .icon-menu .reddit-spam::after {
+    background-image: url(%%spam%%); }
+  .sidecontentbox .content .icon-menu .reddit-edited::after {
+    background-image: url(%%edited%%); }
+  .sidecontentbox .content .icon-menu .reddit-ban::after {
+    background-image: url(%%ban-users%%); }
+  .sidecontentbox .content .icon-menu .reddit-flair::after {
+    background-image: url(%%flair%%); }
+  .sidecontentbox .content .icon-menu .reddit-moderationlog::after {
+    background-image: url(%%moderation-log%%); }
+  .sidecontentbox .content .icon-menu .reddit-unmoderated::after {
+    background-image: url(%%unmoderated-links%%); }
+.sidecontentbox .title h1 {
+  color: #F2F900; }
+.sidecontentbox .collapse-button {
+  background: #000000;
+  color: #FF7A00;
+  border: 1px solid #00A3FF; }
+.sidecontentbox.collapsible .title {
+  cursor: pointer;
+  text-align: right; }
+.sidecontentbox a.helplink {
+  float: none;
+  margin-top: 4px;
+  display: block;
+  width: 280px;
+  background: #000000;
+  padding: 10px;
+  border: solid 1px #FF7A00;
+  margin: 20px 0;
+  font-size: small;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #FF7A00;
+  transition: all 300ms ease; }
+  .sidecontentbox a.helplink:hover {
+    border: solid 1px #00FE00;
+    color: #00FE00; }
+
+.sidebox .spacer {
+  background: #000000; }
+
+.side .login-form-side {
+  border: none; }
+  .side .login-form-side input[type=text] {
+    margin: 0 10px 0 0; }
+  .side .login-form-side input[type=password] {
+    margin: 0; }
+  .side .login-form-side input[type=text], .side .login-form-side input[type=password] {
+    border: solid 1px #00FE00;
+    background: #002F00;
+    width: 145px; }
+.side .linkinfo {
+  border: none;
+  background-color: #000000;
+  color: #FF7A00;
+  text-align: right; }
+  .side .linkinfo .shortlink input {
+    border: none;
+    background: #000000;
+    color: #666666;
+    text-align: right; }
+.side .usertext .usertext-body {
+  background-color: transparent;
+  border: solid 1px #00A3FF;
+  padding: 10px 10px 50px 10px; }
+  .side .usertext .usertext-body .md {
+    color: #F500FF;
+    text-align: center; }
+    .side .usertext .usertext-body .md ul {
+      list-style: none;
+      padding: 0; }
+      .side .usertext .usertext-body .md ul li {
+        margin: 10px 0; }
+    .side .usertext .usertext-body .md strong {
+      font-weight: bold;
+      color: #00FFE0; }
+
+.sidebox .subtitle {
+  color: #FF7A00;
+  text-align: center; }
+
+/* Ensure placeholders use the same colour as the search input text field */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #00FE00; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #00FE00;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #00FE00;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #00FE00; }
+
+/* Style the input */
+#search input[type="text"] {
+  border: solid 1px #00FE00;
+  background-color: #002F00;
+  color: #00FE00 !important;
+  font-family: monospace;
+  font-size: 10px;
+  padding: 10px;
+  padding-left: 50px;
+  font-weight: 800; }
+
+/* Set parent to position relative, so that we can absolute position the before pseudo element */
+.side .spacer {
+  position: relative; }
+
+/* Set the before pseudo element.  This "find:$" item used to be an image, but this is better */
+#search:before {
+  content: "find:$";
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #00FE00;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 800; }
+
+/* Get rid of that nasty grey magnifying glass */
+#search input[type=submit], #search input[type=submit]:hover {
+  background-image: url(%%search%%);
+  background-position: 0 0; }
+
+/* Style dropdown infobar */
+.infobar {
+  background-color: #000000;
+  border: 1px solid #00FE00;
+  color: #00FE00; }
+
+#searchexpando, #moresearchinfo {
+  background-color: #002F00; }
+  #searchexpando a, #moresearchinfo a {
+    color: #F2F900; }
+
+.morelink, .disabled .morelink, .login-form-side .submit .btn, .user-form .submit .btn {
+  display: block;
+  text-align: center;
+  position: relative;
+  border: 1px solid #00A3FF;
+  background: #000000 none repeat-x scroll center left;
+  background-image: none;
+  background-position: 0px -278px;
+  background-repeat: repeat;
+  font-size: 115%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 31px;
+  height: 31px;
+  text-transform: uppercase;
+  transition: all 200ms ease; }
+
+.morelink .nub, .disabled .morelink .nub {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  height: 31px;
+  width: 24px;
+  background: transparent;
+  background-image: none; }
+
+.morelink a {
+  color: #F500FF;
+  transition: all 100ms ease; }
+
+.disabled .morelink a {
+  color: #F00F00;
+  transition: all 100ms ease; }
+
+.morelink:hover, .disabled .morelink:hover, .mlh {
+  border-color: #00FE00;
+  background-image: none; }
+
+.morelink:hover .nub, .disabled .morelink:hover .nub, .mlhn {
+  background-image: none; }
+
+.morelink:hover a, .disabled .morelink:hover a {
+  color: #00FE00; }
+
+.login-form-side #remember-me, .login-form-side .submit {
+  margin: 10px 0px; }
+
+.expando-button.video.collapsed,
+.expando-button.video.collapsed:hover,
+.eb-vch, .expando-button.video.expanded,
+.eb-ve,
+.expando-button.video.expanded:hover,
+.eb-veh,
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.eb-sch,
+.expando-button.selftext.expanded,
+.eb-se,
+.expando-button.selftext.expanded:hover,
+.eb-seh {
+  background-image: url(%%sprite-reddit%%); }
+
+body.submit-page .content h1 {
+  display: none; }
+body.submit-page .formtabs-content {
+  width: 520px;
+  border: 1px solid #00A3FF;
+  padding: 15px;
+  background: #000000; }
+body.submit-page ul.tabmenu.formtab {
+  display: block;
+  padding: 20px 0 0 35px; }
+  body.submit-page ul.tabmenu.formtab li {
+    margin: 0 5px 0 6px; }
+body.submit-page .tabmenu {
+  bottom: 0; }
+body.submit-page .tabmenu.formtab a, body.submit-page .tabmenu.formtab .selected a {
+  font-size: 100%;
+  height: 15px;
+  padding: 4px 15px 0 0px;
+  margin: 0 5px 0 6px;
+  font-weight: bold;
+  border-bottom: none; }
+  body.submit-page .tabmenu.formtab a:before, body.submit-page .tabmenu.formtab .selected a:before {
+    border-bottom: none; }
+  body.submit-page .tabmenu.formtab a:hover, body.submit-page .tabmenu.formtab .selected a:hover {
+    color: #000000;
+    border-color: #00A3FF; }
+body.submit-page .tabmenu.formtab a {
+  border: solid 1px #FF016D;
+  border-bottom: none; }
+body.submit-page .tabmenu.formtab .selected a {
+  color: #00A3FF;
+  border: solid 1px #00A3FF;
+  border-bottom: none;
+  background: #000000; }
+  body.submit-page .tabmenu.formtab .selected a:hover {
+    background: #FF7A00;
+    border-bottom: none; }
+body.submit-page .roundfield {
+  width: 500px;
+  background-color: #000000;
+  border-radius: 0;
+  padding: 5px 10px 10px 10px;
+  font-size: large;
+  border: solid 1px #F500FF;
+  color: #FF7A00; }
+  body.submit-page .roundfield textarea, body.submit-page .roundfield input[type=text], body.submit-page .roundfield input[type=url], body.submit-page .roundfield input[type=password], body.submit-page .roundfield input[type=number] {
+    background: #000000;
+    border: solid 1px #FF7A00;
+    color: #FF7A00; }
+  body.submit-page .roundfield span.title {
+    text-transform: uppercase; }
+body.submit-page button, body.submit-page html input[type="button"], body.submit-page input[type="reset"], body.submit-page .content input[type="submit"] {
+  background: #000000;
+  color: #F500FF;
+  border: solid 1px #00A3FF;
+  padding: 10px;
+  border-radius: 0 10px 0 10px; }
+body.submit-page #suggest-title button {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  border: solid 1px #FF7A00;
+  color: #FF7A00; }
+body.submit-page .content.submit .info-notice {
+  width: 500px;
+  margin-left: 15px;
+  border: solid 1px #00FE00;
+  border-top: none;
+  background: #002F00;
+  color: #00FE00; }
+  body.submit-page .content.submit .info-notice a {
+    color: #00FE00;
+    text-decoration: none; }
+
+ul#image-preview-list li {
+  color: #00FE00; }
+
+.stylesheet-customize-container {
+  color: #00FE00;
+  margin: 20px; }
+  .stylesheet-customize-container .sheets .col textarea {
+    background: #000000;
+    color: #00FE00;
+    border: solid 1px #00FE00;
+    box-sizing: border-box; }
+
+.moderator .linefield {
+  width: 500px;
+  background-color: #000000;
+  border-radius: 0;
+  padding: 5px 10px 10px 10px;
+  font-size: large;
+  border: solid 1px #F500FF;
+  color: #FF7A00; }
+  .moderator .linefield textarea, .moderator .linefield input[type=text], .moderator .linefield input[type=url], .moderator .linefield input[type=password], .moderator .linefield input[type=number] {
+    background: #000000;
+    border: solid 1px #FF7A00;
+    color: #FF7A00; }
+  .moderator .linefield span.title {
+    text-transform: uppercase;
+    font-size: large;
+    color: #FF7A00; }
+  .moderator .linefield .linefield-content {
+    padding: 0; }
+
+.create-reddit .pretty-form {
+  width: 520px;
+  padding: 15px;
+  border: solid 1px #00A3FF;
+  margin: 20px 5px; }
+  .create-reddit .pretty-form input[type=text], .create-reddit .pretty-form textarea, .create-reddit .pretty-form input[type=password], .create-reddit .pretty-form input[type=number] {
+    box-shadow: none; }
+  .create-reddit .pretty-form button[name=edit] {
+    background: #000000;
+    color: #F500FF;
+    border: solid 1px #00A3FF;
+    padding: 10px;
+    border-radius: 0 10px 0 10px;
+    margin: 0;
+    position: absolute;
+    margin-top: 30px;
+    left: 10px; }
+  .create-reddit .pretty-form .linefield:first-of-type {
+    color: #00FE00;
+    border-color: #00FE00; }
+    .create-reddit .pretty-form .linefield:first-of-type .title {
+      color: #00FE00; }
+    .create-reddit .pretty-form .linefield:first-of-type textarea, .create-reddit .pretty-form .linefield:first-of-type input[type=text], .create-reddit .pretty-form .linefield:first-of-type input[type=url], .create-reddit .pretty-form .linefield:first-of-type input[type=password], .create-reddit .pretty-form .linefield:first-of-type input[type=number] {
+      color: #00FE00;
+      border-color: #00FE00; }
+
+#subreddit_stylesheet h2 {
+  display: none; }
+
+.pretty-form input[name=reason] {
+  background: #000000;
+  border: solid 1px #00FE00;
+  color: #00FE00; }
+
+.stylesheet-customize-container button {
+  background: #000000;
+  color: #F500FF;
+  border: solid 1px #00A3FF;
+  padding: 10px;
+  border-radius: 0 10px 0 10px; }
+.stylesheet-customize-container input[type=text] {
+  background: #000000;
+  border: solid 1px #00FE00;
+  color: #00FE00; }
+
+.footer-parent {
+  font-size: larger;
+  padding-top: 40px;
+  clear: both;
+  text-align: right;
+  z-index: 103;
+  position: relative;
+  width: 600px;
+  float: right;
+  margin-right: 320px; }
+
+.footer {
+  color: gray;
+  padding: 5px;
+  margin: 15px auto;
+  border: 1px solid #F500FF;
+  display: flex;
+  max-width: 600px;
+  background: #000000;
+  border-radius: 5px 0 0 5px;
+  border-right: solid 1px #000000;
+  padding-bottom: 50px;
+  position: relative; }
+
+.bottommenu {
+  color: #FF7A00;
+  font-size: 9px;
+  clear: both;
+  text-align: center;
+  width: 600px;
+  float: right;
+  margin-right: 0;
+  position: relative;
+  top: -55px; }
+
+/*!=============================================================================//
+||        The Internet is the first thing that humanity has built that         ||
+||       humanity doesn’t understand, the largest experiment in anarchy        ||
+||                            that we have ever had.                           ||
+//=============================================================================//
+    ||-------|------|-+-+-|----|-_-|--|=|=|--|-_-|----|-+-+-|------|-------||
+//=============================================================================//
+||                OriginⒶlly hⒶcked together by -=|<e!¬-o=-                  ||
+//=============================================================================*/
+
+/*# sourceMappingURL=cyberpunk.css.map */

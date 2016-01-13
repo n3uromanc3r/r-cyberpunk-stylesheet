@@ -1,0 +1,357 @@
+.leavemoderator {
+	background: $bg-color;
+}
+
+.titlebox {
+
+	color: $green;
+	text-align: right;
+
+	h1 {
+		text-align: center;
+		padding: 0 0 30px;
+		display: none;
+		a {
+			color: $orange;
+		}
+	}
+
+	form.toggle {
+		background: $bg-color;
+	}
+
+	.fancy-toggle-button {
+		display: block;
+		margin-right: 0;
+		text-align: center;
+		padding: 0 0 30px;
+
+		.remove {
+			background-image: none;
+			background: $bg-color;
+			border: solid 1px $orange;
+			color: $orange;
+		}
+
+		.add {
+			background-image: none;
+			background: $bg-color;
+			border: solid 1px $green;
+			color: $green;
+		}
+	}
+
+	.subscribers {
+
+		background: $dark-green;
+		width: 290px;
+		display: block;
+		padding: 5px;
+		border: solid 1px $green;
+		text-align: right;
+		border-bottom: none;
+		font-family: monospace;
+
+		span.word {
+
+			font-size: 0;
+
+			&::after {
+				content: "subscribed users";
+				display: inline-block;
+				font-size: small;
+				width: auto;
+			}
+		}
+	}
+
+	.users-online {
+
+		background: $dark-green;
+		width: 290px;
+		display: block;
+		padding: 5px;
+		border: solid 1px $green;
+		text-align: right;
+		border-top: none;
+		font-family: monospace;
+
+		&::before {
+			background-image: url(%%spinner%%);
+			background-position: 0 0;
+			width: 16px;
+			height: 16px;
+			margin-right: 5px;
+			// -webkit-animation:spin 4s linear infinite !important;
+			// -moz-animation:spin 4s linear infinite !important;
+			// animation:spin 4s linear infinite !important;
+		}
+
+		span.word {
+
+			font-size: 0;
+
+			&::after {
+				content: "authenticated users connected";
+				font-size: small;
+				width: auto;
+			}
+		}
+	}
+
+	.leavemoderator {
+		padding-top: 40px;
+
+		&::before {
+			background-image: url(%%moderator%%);
+			background-position: 0 0 ;
+		}
+	}
+
+	.moderator.toggle {
+		.main {
+			&::before {
+				background-image: url(%%moderator%%);
+				background-position: 0 0 ;
+			}
+		}	
+	}
+
+	form.leavecontributor-button {
+		&::before {
+			background-image: url(%%approved%%);
+			background-position: 0 0 ;
+		}
+	}
+
+	.tagline {
+		margin: 5px 0 50px 20px;
+	}
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.icon-menu {
+	a {
+		background: $bg-color;
+	}
+}
+
+.sidecontentbox {
+	.content {
+		border: none;
+
+		ul.flat-vert {
+			text-align: right;
+
+			a {
+				color: $orange;
+			}
+		}
+
+		.icon-menu {
+			.choice {
+				&::before {
+					background-image: none;
+				}
+
+				&::after {
+					background-position: 0px 0px;
+					background-repeat: no-repeat;
+					height: 16px;
+					width: 16px;
+					display: inline-block;
+					content: " ";
+					margin-left: 8px;
+					vertical-align: middle;
+				}
+			}
+			.reddit-edit {
+				&::after {
+					background-image: url(%%subreddit-settings%%);
+				}
+			}
+			.edit-stylesheet {
+				&::after {
+					background-image: url(%%edit-stylesheet%%);
+				}
+			}
+			.moderator-mail {
+				&::after {
+					background-image: url(%%moderator-mail%%);
+				}
+			}
+			.reddit-moderators {
+				&::after {
+					background-image: url(%%moderators%%);
+				}
+			}
+			.reddit-contributors {
+				&::after {
+					background-image: url(%%edit-approved-submitters%%);
+				}
+			}
+			.reddit-traffic {
+				&::after {
+					background-image: url(%%traffic-stats%%);
+				}
+			}
+			.reddit-modqueue {
+				&::after {
+					background-image: url(%%moderation-queue%%);
+				}
+			}
+			.reddit-reported {
+				&::after {
+					background-image: url(%%reports%%);
+				}
+			}
+			.reddit-spam {
+				&::after {
+					background-image: url(%%spam%%);
+				}
+			}
+			.reddit-edited {
+				&::after {
+					background-image: url(%%edited%%);
+				}
+			}
+			.reddit-ban {
+				&::after {
+					background-image: url(%%ban-users%%);
+				}
+			}
+			.reddit-flair {
+				&::after {
+					background-image: url(%%flair%%);
+				}
+			}
+			.reddit-moderationlog {
+				&::after {
+					background-image: url(%%moderation-log%%);
+				}
+			}
+			.reddit-unmoderated {
+				&::after {
+					background-image: url(%%unmoderated-links%%);
+				}
+			}
+		}
+	}
+
+	.title {
+		h1 {
+			color: $yellow;
+		}
+	}
+
+	.collapse-button {
+		background: $bg-color;
+		color: $orange;
+		border: 1px solid $cyan;
+	}
+
+	&.collapsible {
+		.title {
+			cursor: pointer;
+			text-align: right;
+		}
+	}
+
+	a.helplink {
+		float: none;
+		margin-top: 4px;
+		display: block;
+		width: 280px;
+		background: $bg-color;
+		padding: 10px;
+		border: solid 1px $orange;
+		margin: 20px 0;
+		font-size: small;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+		color: $orange;
+		transition: all 300ms ease;
+
+		&:hover {
+			border: solid 1px $green;
+			color: $green;
+		}
+	}
+
+}
+
+.sidebox .spacer {
+	background: $bg-color;
+}
+
+.side {
+	.login-form-side {
+		border: none;
+
+		input[type=text] {
+			margin: 0 10px 0 0;
+		}
+
+		input[type=password] {
+			margin: 0;
+		}
+
+		input[type=text], input[type=password] {
+			border: solid 1px $green;
+			background: $dark-green;
+			width: 145px;
+		}
+	}
+
+	.linkinfo {
+		border: none;
+		background-color: $bg-color;
+		color: $orange;
+		text-align: right;
+
+		.shortlink {
+			input {
+				border: none;
+				background: $bg-color;
+				color: $grey;
+				text-align: right;
+			}
+		}
+	}
+
+	.usertext {
+		.usertext-body {
+			background-color: transparent;
+			border: solid 1px $cyan;
+			padding: 10px 10px 50px 10px;
+
+			.md {
+				color: $pink;
+				text-align: center;
+
+				ul {
+					list-style: none;
+					padding: 0;
+
+					li {
+						margin: 10px 0;
+					}
+				}
+
+				strong {
+					font-weight: bold;
+					color: $cyan-green;
+				}
+			}
+		}
+	}
+}
+
+.sidebox .subtitle {
+	color: $orange;
+	text-align: center;
+}

@@ -1,0 +1,149 @@
+/*!============================================================================//
+||                       00110001 :: HEADER BOTTOM LEFT                        ||
+||=============================================================================||
+||                                                                             ||
+||               Never underestimate the determination of a kid                ||
+||                        who is time-rich and cash-poor                       ||
+||                                                                             ||
+//=============================================================================*/
+
+/* change header logo image */
+#header-bottom-left {
+    height: 80px;
+    background-image: url(%%header%%);
+}
+
+/* change header border bottom */
+#header {
+	border-bottom: 1px solid $cyan;
+	z-index: 103;
+}
+
+/* make logo text (pagename) clickable */
+.pagename {
+	font-size: 0px !important;
+	a {
+		text-indent: -9999px;
+		font-size: 0px!important;
+		color: black;
+		padding-left: 162px!important;
+		padding-top: 75px!important;
+		margin-left: 30px!important;
+		position: absolute;
+		left: 60px;
+		top: 20px;
+	}
+}
+
+.tabmenu {
+	bottom: 5px;
+	position: relative;
+
+	@media (max-width: 1165px) {
+		left: -88px;
+		font-size: smaller;
+	}
+
+	li {
+		margin: 0px 6px;
+		position: relative;
+
+		a, &.selected a {
+			padding: 4px 15px 0 0px;
+			background-color: $bg-color;
+			border: solid 1px $hotter-pink;
+			border-left: none;
+			border-bottom: none;
+			color: $orange;
+			position: relative;
+			height: 15px;
+			display: inline-block;
+
+			&::before {
+				content: "";
+				background: url(%%tab-left%%);
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				left: -20px;
+				top: -1px;
+			}
+		}
+
+		&.selected a, &:hover a {
+			color: $cyan;
+			border: solid 1px $cyan;
+			border-bottom: solid 1px $bg-color;
+
+			&::before {
+				background: url(%%tab-left-selected%%);
+				border-bottom: solid 1px $bg-color;
+			}
+		}
+
+		a:hover {
+			color: $bg-color;
+			background: $orange;
+			border-bottom: solid 1px $orange;
+
+			&::before {
+				background: url(%%tab-left-hover%%);
+			}
+		}
+
+		&:first-child {
+			z-index: 9;
+		}
+
+		&:nth-child(2) {
+			z-index: 8;
+		}
+
+		&:nth-child(3) {
+			z-index: 7;
+		}
+
+		&:nth-child(4) {
+			z-index: 6;
+		}
+
+		&:nth-child(5) {
+			z-index: 5;
+		}
+
+		&:nth-child(6) {
+			z-index: 4;
+		}
+
+		&:nth-child(7) {
+			z-index: 3;
+		}
+
+		&:nth-child(8) {
+			z-index: 2;
+		}
+
+		&:nth-child(9) {
+			z-index: 1;
+		}
+
+		&.selected {
+			z-index: 10;
+		}
+
+		&:hover {
+			z-index: 9;
+
+			&:not(.selected) {
+				margin: 0 5px 0 6px;
+			}
+
+			a:hover {
+				&::before {
+					border-bottom: solid 1px $orange;
+				}
+			}
+		}
+	}
+}

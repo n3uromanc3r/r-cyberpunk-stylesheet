@@ -1,0 +1,29 @@
+body {
+    background-image: url(%%bg%%);
+}
+.side {
+	background: $bg-color;
+	padding: 5px 10px 5px 10px;
+	border-left: 1px solid $cyan;
+	border-bottom: 1px solid $cyan;
+	position: absolute;
+	margin-top: -1px;
+	z-index: 100;
+	right: -5px;
+}
+.hover-bubble.multi-selector {
+	z-index: 103;
+}
+.menuarea {
+	border-bottom: none;
+}
+a {
+	color: $cyan;
+	outline: none !important;
+}
+button {
+	outline: none !important;
+}
+input {
+	box-shadow: none !important;
+}

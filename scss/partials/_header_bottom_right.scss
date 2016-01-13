@@ -1,0 +1,23 @@
+#header-bottom-right {
+	background-color: #000000;
+	padding: 10px;
+
+	&::after {
+		content: "";
+		display: block;
+		background: black;
+		height: 1px;
+		width: 320px;
+		position: absolute;
+		right: 0;
+		bottom: -1px;
+	}
+}
+
+.user a {
+	color: $yellow;
+}
+
+.pref-lang {
+	color: $orange;
+}
